@@ -1,0 +1,204 @@
+    body {
+        --sky-colour: lightblue;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        padding: 0;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    .bg-home {
+        background-color: var(--sky-colour);
+        height: 100%;
+    }
+    
+    .cloud {
+        --cloud-colour: #ffffff;
+        --cloud-factor: 1rem;
+        --cloud-opacity: 0.4;
+        position: absolute;
+        top: 10%;
+        left: calc(-20 * var(--cloud-factor));
+        right: auto;
+        background-color: var(--cloud-colour);
+        opacity: var(--cloud-opacity);
+        width: calc(20 * var(--cloud-factor));
+        height: calc(6 * var(--cloud-factor));
+        border-radius: calc(3 * var(--cloud-factor));
+        animation: cloudFloat 30s linear infinite;
+    }
+    
+    .cloud:before {
+        content: "";
+        position: absolute;
+        left: calc(3.2 * var(--cloud-factor));
+        bottom: calc(3.2 * var(--cloud-factor));
+        background-color: var(--cloud-colour);
+        width: calc(8 * var(--cloud-factor));
+        height: calc(8 * var(--cloud-factor));
+        border-radius: 50%;
+    }
+    
+    .cloud:after {
+        content: "";
+        position: absolute;
+        left: calc(8.7 * var(--cloud-factor));
+        bottom: calc(2.2 * var(--cloud-factor));
+        background-color: var(--cloud-colour);
+        width: calc(7.5 * var(--cloud-factor));
+        height: calc(7.5 * var(--cloud-factor));
+        border-radius: 50%;
+    }
+    
+    .cloud:nth-child(2) {
+        --cloud-factor: 0.75rem;
+        --cloud-opacity: 0.5;
+        top: 20%;
+        left: -50%;
+        right: auto;
+        animation: cloudFloat 24s linear infinite;
+    }
+    
+    .cloud:nth-child(3) {
+        --cloud-factor: 0.6rem;
+        --cloud-opacity: 0.4;
+        top: 35%;
+        left: -50%;
+        right: auto;
+        animation: cloudFloat 19s linear infinite;
+    }
+    
+    .cloud:nth-child(4) {
+        --cloud-factor: 0.6rem;
+        --cloud-opacity: 0.4;
+        top: 25%;
+        left: -50%;
+        right: auto;
+        animation: cloudFloat 21s linear infinite;
+    }
+    
+    .cloud:nth-child(5) {
+        --cloud-factor: 0.6rem;
+        --cloud-opacity: 0.4;
+        top: 45%;
+        left: -50%;
+        right: auto;
+        animation: cloudFloat 22s linear infinite;
+    }
+    
+    .cloud:nth-child(5) {
+        --cloud-colour: #ffffff;
+        --cloud-factor: 1rem;
+        --cloud-opacity: 0.4;
+        position: absolute;
+        top: 40%;
+        left: calc(-20 * var(--cloud-factor));
+        right: auto;
+        background-color: var(--cloud-colour);
+        opacity: var(--cloud-opacity);
+        width: calc(20 * var(--cloud-factor));
+        height: calc(6 * var(--cloud-factor));
+        border-radius: calc(3 * var(--cloud-factor));
+        animation: cloudFloat 25s linear infinite;
+    }
+    
+    @keyframes cloudFloat {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(150vmax, 0, 0);
+        }
+    }
+    
+    .bg-index {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .leaf1 {
+        position: absolute;
+        width: 110px;
+        bottom: 50%;
+        right: 47.5%;
+        top: 19%;
+    }
+    
+    .leaf2 {
+        position: absolute;
+        width: 60px;
+        bottom: 50%;
+        right: 35.6%;
+        top: 29%;
+    }
+    
+    .leaf3 {
+        position: absolute;
+        width: 40px;
+        bottom: 50%;
+        top: 29.8%;
+        right: 32.3%;
+    }
+    
+    .leaf4 {
+        position: absolute;
+        width: 40px;
+        bottom: 50%;
+        top: 39.3%;
+        right: 27.3%;
+    }
+    
+    .leaf5 {
+        position: absolute;
+        width: 50px;
+        bottom: 50%;
+        top: 51.3%;
+        right: 26.6%;
+    }
+    
+    .leaf6 {
+        position: absolute;
+        width: 50px;
+        bottom: 50%;
+        top: 56.1%;
+        right: 35.1%;
+    }
+    
+    .leaf7 {
+        position: absolute;
+        width: 60px;
+        bottom: 50%;
+        top: 60%;
+        right: 65.1%;
+    }
+    
+    .leaf8 {
+        position: absolute;
+        width: 100px;
+        bottom: 50%;
+        top: 50.4%;
+        right: 62.6%;
+    }
+    
+    .leaf9 {
+        position: absolute;
+        width: 70px;
+        bottom: 50%;
+        top: 36.8%;
+        right: 64.9%;
+    }
+    
+    .leaf10 {
+        position: absolute;
+        width: 30px;
+        bottom: 50%;
+        top: 20%;
+        right: 63.7%;
+    }
+    
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
